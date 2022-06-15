@@ -1,0 +1,27 @@
+.Add-todo{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.input-add-todo{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid ;
+    height: 100px;
+    width: 40%;
+}
+
+.btn-add{
+    padding: 7px 50px 7px 50px;
+    border-radius: 5px;
+    border: blue 1px solid;
+    color: #fff;
+    background-color: blue;
+    margin-left: 10px;
+}
+
+.btn-add:hover{
+box-shadow: 3px 3px 5px  rgb(56, 56, 252) ;
+transition: 0.3s;
+} 
