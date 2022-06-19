@@ -1,15 +1,15 @@
 
 
 let dataTodo = {
-    text : ['a','b'],
+    text : [],
     push : function pushData(params) {
         dataTodo.text.push(params)
     },
     remove : function removeData(index) {
-        dataTodo.text = dataTodo.text.filter((item)=>{
-            return item !== dataTodo.text[index]
-        })
-        console.log(dataTodo.text);
+        // console.log(dataTodo.text);
+
+        dataTodo.text.splice(index,1) 
+        return dataTodo.text
     }
 }
 

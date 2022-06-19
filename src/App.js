@@ -1,4 +1,6 @@
+import { useNavigate } from 'react-router-dom'
 import { useState } from 'react';
+   
 
 import Addtodo from './Component/Add-todo/Addtodo';
 import Header from './Component/Header/Header';
@@ -19,10 +21,14 @@ function App() {
   const [todo , settodo] = useState(dataTodo.text)
   // console.log(todo);
 
+  const Navigate = useNavigate()
+
+
 
   const remove = (i)=>{
   dataTodo.remove(i)
   settodo(dataTodo.text)
+  Navigate('/')
   }
 
   const addDatatodo = (event)=>{
@@ -31,6 +37,7 @@ function App() {
     dataTodo.push(event.target.textarea.value);
     settodo(dataTodo.text);
     event.target.textarea.value =''
+    Navigate('/')
   }
 
   // addDatatodo('lolo')
